@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "model": "products"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "service": {
+      "model": "services"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "resolved",
+        "pending",
+        "declined"
+      ]
+    },
+    "user_id": {
+      "type": "integer"
+    },
+    "owner_id": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

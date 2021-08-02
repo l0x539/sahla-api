@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services_plans",
+  "info": {
+    "name": "services_plans",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "service": {
+      "via": "services_plans",
+      "model": "services"
+    }
+  }
+}
