@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/best-products",
+      "handler": "best-products.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/best-products",
+      "handler": "best-products.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/best-products",
+      "handler": "best-products.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

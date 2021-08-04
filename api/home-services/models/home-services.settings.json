@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_services",
+  "info": {
+    "name": "best_services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "services": {
+      "collection": "services"
+    }
+  }
+}

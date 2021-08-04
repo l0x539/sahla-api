@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "best_products",
+  "info": {
+    "name": "best_products"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "collection": "products"
+    }
+  }
+}
